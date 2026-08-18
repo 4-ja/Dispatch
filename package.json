@@ -13,8 +13,9 @@
   "dependencies": {
     "@google/genai": "^2.17.1",
     "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "googleapis": "^175.0.0",
     "node-cron": "^4.6.0",
-    "node-telegram-bot-api": "^2.0.0"
+    "node-telegram-bot-api": "^1.2.0"
   }
 }
