@@ -30,9 +30,9 @@ const oauth2Client = new google.auth.OAuth2(
 function getAuthUrl(chatId) {
   return oauth2Client.generateAuthUrl({
     access_type: 'offline',
-    prompt: 'consent',
+    prompt: 'select_account consent', // Forces account selector + consent screen
     scope: ['https://www.googleapis.com/auth/gmail.readonly'],
-    state: chatId.toString() // Passed through OAuth so we know which Telegram user to bind
+    state: chatId.toString()
   });
 }
 
